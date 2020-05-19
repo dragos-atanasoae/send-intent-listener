@@ -1,0 +1,50 @@
+{
+  "name": "send-intent-listener",
+  "version": "0.0.1",
+  "description": "This Capacitor plugin can be used in Ionic applications for receiving data from Intent.SEND_ACTION (works only for intent type \"text/plain\") ",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Dragos Atanasoae",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^2.0.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "^3.2.4",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "SendIntentListener.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragos-atanasoae/send-intent-listener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dragos-atanasoae/send-intent-listener.git/issues"
+  }
+}
