@@ -29,7 +29,7 @@ public class SendIntentListener extends Plugin {
         String action = intent.getAction();
         String type = intent.getType();
         String stringExtra = intent.getStringExtra(Intent.EXTRA_TEXT);
-        System.out.print("Text received: " + stringExtra);
+
         if (Intent.ACTION_SEND.equals(action) && type != null) {
             if ("text/plain".equals(type)) {
                 JSObject ret = new JSObject();

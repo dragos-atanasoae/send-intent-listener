@@ -1,6 +1,6 @@
 {
   "name": "send-intent-listener",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This Capacitor plugin can be used in Ionic applications for receiving data from Intent.SEND_ACTION (works only for intent type \"text/plain\") ",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
